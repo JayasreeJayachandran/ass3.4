@@ -1,2 +1,9 @@
 Importance of Namenode in Hadoop cluster:
-       >
+       >Namenode becomes the most important part of HDFS since a client can access his files only through namenodes.
+       >since this holds the address,a file can be accessed only through this.
+       >without namenode there is no use od data in datanode
+       >but a single name node is highly dangerous to maintain,since if it fails then the whole system remains useless 
+       without mapping
+       >there comes another namenode passive namenode that updates itself about the file system and when the active namenode fails,
+       its takes over and helps the system to access files
+       >it updates itself with the help of edit logs.
